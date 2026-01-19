@@ -11,12 +11,15 @@
 }
 
 .btn{
+   
     font-weight: 600;
     padding: 10px 10px 9px 10px;
     border: none;
+    outline: none;
     border-radius: 1000px;
     color: #ffff;
     background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
+    cursor: pointer;
 }
 
 .btn i{
@@ -40,6 +43,7 @@
     border-radius: 1000px;
     color: #ffff;
     background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F); 
+    cursor: pointer;
 }
 
 .btn2 img {
@@ -56,6 +60,7 @@
      border: 1px solid #00FF88;
      border-radius: 1000px;
      color: #00FF88;
+     cursor: pointer;
 }
 
 .btn3 img{
@@ -69,6 +74,7 @@ header{
 }
 
 #navber{
+    width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -84,7 +90,6 @@ header{
 .gradient-text{
     color: transparent;
     background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
-    -webkit-background-clip: text;
     background-clip: text;
 }
 
@@ -95,28 +100,27 @@ header{
 
 .menu ul li{
     color: #ffff;
+    cursor: pointer;
+}
+
+.icone{
+    display: none;
+
 }
 
 .banner{
     background-image: url(../assets/hero-bg.png);
+    width: 1005;
+    max-width: 1600px;
+    height: auto;
     border-radius: 1000px;
     padding-bottom: 100px;
-    position: relative;
+    position: relative;   
+    margin: 0 auto; 
 }
 
-.banner .new{
-    border: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: #00FF88;
-    color: #1A0B2E;
-    padding: 8px 10px;
-    border-radius: 1000px;
-    position: absolute;
-    top: 120px;
-    left: 885px;
-    z-index: 10;
-}
+
+
 
 .banner-container{
     max-width: 550px;
@@ -127,22 +131,39 @@ header{
 
 }
 
+.banner-container .new{
+    width: 75px;
+    height: 37px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1000px;
+    color: #1A0B2E;
+    background-color: #00FF88;
+    position: absolute;
+    top: 123px;
+    right: 633px;
+    z-index: 10;
+    animation: borochoto  2s ease-in-out infinite;
+}
+
 .images{
     position: relative;
 }
 
-.images.back-imag{
+.back-imag{
     display: block;
+    padding-left: 100px;
 }
 
-.images .front-imag{
+.front-imag{
     position: absolute;
    top: 80px;
    right: 215px;
 }
 
 .content h2{
-    font-size: 60px;
+    font-size: 3.6rem;
     font-weight: 800;
     color: #ffff;
     margin-top: 40px;
@@ -154,3 +175,128 @@ header{
     opacity: 80%;
     padding-bottom: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes borochoto {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    #navber{
+        padding:
+            16px 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+          .menu , .btn{
+        display: none;
+    }
+    .icone{
+        display: block;
+        cursor: pointer;
+    }
+    
+
+
+
+    .banner{
+        width: 100%;
+         max-width: 567px;
+          height: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;     
+}
+    .banner-container{
+        width: 100%;
+    max-width: 400px;
+    height: 386px;
+    margin: 0px auto;
+    padding-top:150px;
+    padding-right: 16px;
+
+}
+.images{
+    padding-top: 29px;
+}
+
+    .back-imag{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+    .front-imag{
+        width: 50px;
+        height: auto;        
+        left: 173px;
+        top: 91px;
+    }
+
+        .banner-container .new{
+    width: 67px;
+    height: 32px;
+    top: 190px;
+    right: 165px;
+}
+
+
+
+    }
+  
