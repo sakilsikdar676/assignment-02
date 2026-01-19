@@ -234,9 +234,61 @@ header{
     opacity: 80%;
 }
 
+/* about style end  */
 
+#featurs{
+    background-color: #230E3D;
+    padding: 120px 200px;
+}
 
+#featurs .heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffff;
+    margin-bottom: 40px;
+}
+.feature-cerd{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
 
+    grid-template-areas: 
+    "headphon mobile mobile"
+    "headphon location location"
+    "flush     flush    book"
+
+}
+
+.headphon { grid-area: headphon; }
+.mobile { grid-area: mobile; }
+.location { grid-area: location; }
+.flush { grid-area: flush; }
+.book { grid-area: book ; }
+
+.cerd{
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+.cerd img{
+    width: 40px;
+    height: 40px;
+}
+
+.cerd h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffff;
+    margin: 16px 0;
+}
+
+.cerd p{
+    color: #ffff;
+    opacity: 60%;
+    line-height: 24px;
+}
 
 
 
