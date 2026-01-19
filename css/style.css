@@ -5,9 +5,17 @@
     text-decoration: none;
 }
 
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+body {
+  overflow-x: hidden; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .btn{
@@ -177,6 +185,56 @@ header{
 }
 
 
+/* banner styling end  */
+
+#about{
+    background-color: #1A0B2E;
+    padding: 40px 200px 120px;
+}
+
+.about-content{
+    text-align: center;
+}
+
+.about-content h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.about-content p{
+    line-height: 30px;
+    font-weight: 300;
+    color: #ffff;
+    opacity: 80%;
+    margin-bottom: 80px;
+}
+
+.about-feedback{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 72px;
+}
+
+.feedback-cerd{
+    width: 240px;
+    height: 95px;
+    text-align: center;
+}
+
+.feedback-cerd h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00FF88;
+}
+
+.feedback-cerd p{
+    line-height: 20px;
+    color: #ffff;
+    opacity: 80%;
+}
+
+
 
 
 
@@ -292,9 +350,35 @@ header{
         .banner-container .new{
     width: 67px;
     height: 32px;
-    top: 190px;
-    right: 165px;
+    top: 178px;
+    right: 166px;
+
 }
+
+/* banner responcive end  */
+
+#about{
+    background-color: #1A0B2E;
+    padding: 40px 20px;
+}
+.about-feedback{
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+.feedback-cerd{
+    width: 180px;
+    height: 85px;
+    /* text-align: center; */
+}
+
+
+
+
+
+
+
+
 
 
 
