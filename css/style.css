@@ -12,14 +12,55 @@
 
 .btn{
     font-weight: 600;
-    padding: 12px 16px 10px 16px;
+    padding: 10px 10px 9px 10px;
     border: none;
     border-radius: 1000px;
+    color: #ffff;
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
 }
 
 .btn i{
     width: 1.2rem;
     height: 1.2rem;
+}
+
+.button-section{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn2{
+    display: flex;
+    gap: 8px;
+   font-weight: 600;
+   align-items: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 1000px;
+    color: #ffff;
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F); 
+}
+
+.btn2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn3{
+    display: flex;
+    gap: 8px;
+    font-weight: 600;
+     padding: 12px 20px;
+     background: none;
+     border: 1px solid #00FF88;
+     border-radius: 1000px;
+     color: #00FF88;
+}
+
+.btn3 img{
+    width: 20px;
+    height: 15px;
 }
 
 header{
@@ -42,7 +83,7 @@ header{
 
 .gradient-text{
     color: transparent;
-    background: linear-gradient(to bottom, #9100F8, #FB09B4, #F7E93F);
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -54,4 +95,62 @@ header{
 
 .menu ul li{
     color: #ffff;
+}
+
+.banner{
+    background-image: url(../assets/hero-bg.png);
+    border-radius: 1000px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.banner .new{
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    padding: 8px 10px;
+    border-radius: 1000px;
+    position: absolute;
+    top: 120px;
+    left: 885px;
+    z-index: 10;
+}
+
+.banner-container{
+    max-width: 550px;
+    margin: 0px auto;
+    padding-top:110px ;
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+.images{
+    position: relative;
+}
+
+.images.back-imag{
+    display: block;
+}
+
+.images .front-imag{
+    position: absolute;
+   top: 80px;
+   right: 215px;
+}
+
+.content h2{
+    font-size: 60px;
+    font-weight: 800;
+    color: #ffff;
+    margin-top: 40px;
+
+}
+
+.content p{
+    color: #ffff;
+    opacity: 80%;
+    padding-bottom: 24px;
 }
