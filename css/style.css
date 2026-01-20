@@ -319,6 +319,10 @@ header{
     border-top-left-radius:24px ; */
 }
 
+.video:hover .play-btn{
+    display: none;
+}
+
 .play-btn{
     position: absolute;
     width: 72px;
@@ -413,6 +417,10 @@ header{
     border: 1px solid grey;
 }
 
+.icone-png .png{
+    cursor: pointer;
+}
+
 #footer-bg{
     background-image: url(../assets/footer-bg.png);
     padding: 100px 120px 120px;
@@ -437,6 +445,7 @@ header{
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
 .itame span{
