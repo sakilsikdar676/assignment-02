@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+* {
+    outline: 1px solid red !important;
+}
+
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -241,7 +245,7 @@ header{
     padding: 120px 200px;
 }
 
-#featurs .heading{
+#featurs .heading , .video-heading{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -289,6 +293,90 @@ header{
     opacity: 60%;
     line-height: 24px;
 }
+
+
+/* fetures style end  */
+
+#video-section{
+    background-color: #1A0B2E;
+    padding: 120px 0;
+}
+
+.video-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-cerd{
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.video{
+    position: relative;
+    /* border-top-right-radius:24px ;
+    border-top-left-radius:24px ; */
+}
+
+.play-btn{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(230deg,  #9100F8 , #FB09B4 , #F7E93F  );
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 0, 204, 0.4);
+    z-index: 2;
+    top: 72px;
+    left: 155px;
+}
+
+.play-icon{
+    /* position: absolute; */
+    color: white;
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+.content{
+    padding: 24px;
+    background-color: #250D44;
+    /* border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px; */
+}
+
+.content h4{
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.content p{
+    line-height: 24px;
+    color: #ffff;
+    opacity: 60%;
+}
+
+
+.content span{
+    line-height: 24px;
+    font-weight: 600;
+    color: #00FF88;
+    align-items: center;
+}
+
+.content span img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
 
 
 
@@ -349,6 +437,8 @@ header{
 
 
 @media screen and (max-width:576px) {
+
+
     #navber{
         padding:
             16px 20px;
@@ -362,6 +452,10 @@ header{
         display: block;
         cursor: pointer;
     }
+
+    header {
+    max-width: 576px;
+}
     
 
 
@@ -421,15 +515,41 @@ header{
 .feedback-cerd{
     width: 180px;
     height: 85px;
-    /* text-align: center; */
+}
+/* about responciv done   */
+
+/* features responciv start  */
+
+ #featurs{
+    width: 100%;
+    max-width: 536px;
+    padding: 40px 20px;
 }
 
+#featurs .heading ,.video-heading {
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 2rem;
+}
 
+.feature-cerd{
+    width: 100%;
+    gap: 16px;
+    grid-template-columns: repeat(1,1fr);
 
+    grid-template-areas: 
+    "headphon"
+    "mobile "
+    "location "
+    "flush "
+    "book "
+}
 
-
-
-
+.cerd{
+    padding: 14px;
+    border-radius: 24px;
+}
+/* feature responcive done  */
 
 
 
