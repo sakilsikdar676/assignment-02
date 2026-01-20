@@ -5,9 +5,6 @@
     text-decoration: none;
 }
 
-/* * {
-    outline: 1px solid red !important;
-} */
 
 
 .inter-font {
@@ -95,7 +92,7 @@ header{
 
 }
 
-.logo h1{
+.logo h1, .footer-logo {
     color: #ffff;
 }
 
@@ -416,12 +413,53 @@ header{
     border: 1px solid grey;
 }
 
+#footer-bg{
+    background-image: url(../assets/footer-bg.png);
+    padding: 100px 120px 120px;
+}
 
+.footer-logo{
+    font-size: 2.4rem;
+    text-align: center;
+}
 
+.footer-icone{
+    width: 100%;
+    max-width: 544px;
+    margin: 32px auto;
+    gap: 20px;
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
 
+.itame{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.itame span{
+    
+    width: 120px;
+    height: 20px;
+    font-weight: 500;
+    color: #ffff;
+    opacity: 60%;
 
+}
 
+.sub-text {
+    text-align: center;
+}
+
+.sub-text p{
+    line-height: 24px;
+    color: #FAFAFA;
+    opacity: 60%;
+}
+
+/* animition add rileted code  */
 
 @keyframes borochoto {
   0% {
@@ -435,42 +473,7 @@ header{
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* responciv rileted code  */
 
 
 @media screen and (max-width:576px) {
@@ -494,10 +497,7 @@ header{
     max-width: 576px;
 }
     
-
-
-
-    .banner{
+  .banner{
         width: 100%;
          max-width: 567px;
           height: auto;
@@ -618,6 +618,30 @@ header{
     gap: 8px;
     margin: 0 auto;
 }
+
+/* host section responciv end  */
+
+#footer-bg{
+    
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 536px;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+.footer-icone{
+    width: 100%;
+    max-width: 255px;
+    margin: 24px 111px;
+    gap: 20px;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
 
 
 
