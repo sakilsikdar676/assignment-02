@@ -344,34 +344,35 @@ header{
   margin-left: 5px;
 }
 
-.content{
+.video-content{
     padding: 24px;
     background-color: #250D44;
     /* border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px; */
 }
 
-.content h4{
+.video-content h4{
     color: #ffff;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.content p{
+.video-content p{
     line-height: 24px;
     color: #ffff;
     opacity: 60%;
+    margin-bottom: 12px;
 }
 
 
-.content span{
+.video-content span{
     line-height: 24px;
     font-weight: 600;
     color: #00FF88;
     align-items: center;
 }
 
-.content span img{
+.video-content span img{
     width: 20px;
     height: 20px;
 }
