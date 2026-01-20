@@ -245,7 +245,7 @@ header{
     padding: 120px 200px;
 }
 
-#featurs .heading , .video-heading{
+#featurs .heading , .video-heading , .host-heading{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -307,7 +307,7 @@ header{
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
 }
 
 .video-cerd{
@@ -377,9 +377,44 @@ header{
     height: 20px;
 }
 
+.host-container{
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #250D44;
+    border-radius: 40px;
+    padding: 40px;
+    margin: 0 auto;
+}
 
+.host-container h4{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffff;
+}
 
+.host-container p{
+    line-height: 24px;
+    color: #ffff;
+    opacity: 60%;
+    margin: 16px 0;
+}
 
+.host-icones{
+    display: flex;
+    gap: 8px;
+}
+
+.host-icones .icone-png{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
 
 
 
@@ -559,8 +594,31 @@ header{
     gap: 16px;
     width: 100%;
     max-width: 576px;
+    margin: 0 auto 120px;
+}
+
+/* video responciv end  */
+
+.host-container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: #250D44;
+    border-radius: 40px;
+    padding: 40px;
     margin: 0 auto;
 }
+
+.host-icones{
+    width: 100%;
+    max-width: 184px;
+    display: flex;
+    gap: 8px;
+    margin: 0 auto;
+}
+
 
 
     }
